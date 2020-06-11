@@ -6,6 +6,7 @@ const func = (req, res) => {
   res.get('/instagram-photo/:slug', async (req, res) => {
     console.log(slug);
     const data = await axios.get(`https://www.instagram.com/slug/?__a=1`);
+    console.log(data);
     res.send(data);
   });
 };
